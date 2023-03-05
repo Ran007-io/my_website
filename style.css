@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.top_promo {
+    position: relative;
+    height: 315px;
+    width: 565px;
+    margin: 200px auto;
+}
+
+.top_promo img {
+    height: 100%;
+}
+
+.next,
+.prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 20px;
+    height: 30px;
+
+    background-color: aqua;
+
+    text-align: center;
+    line-height: 30px;
+}
+
+.prev {
+    left: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+
+
+.next {
+    right: 0;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+
+.promo_nav {
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    width: 60px;
+    height: 14px;
+    margin-left: -30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+
+
+}
+
+.promo_nav li {
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    margin-top: 3px;
+    border-radius: 8px;
+
+    background-color: #fdfffc;
+    list-style: none;
+}
+
+.tudou {
+    position: relative;
+    margin: 100px auto;
+    width: 612px;
+    height: 304px;
+}
+
+.tudou img {
+    width: 100%;
+    height: 100%;
+}
+
+.mask_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    width: 20px;
+    height: 20px;
+
+    background-color: chartreuse;
+}
+
+.mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    visibility: hidden;
+
+    background-color: rgb(13, 109, 128, 0.3);
+}
+
+.tudou:hover .mask {
+    /* 被隐藏或者不可见后，你不能经过它； */
+    visibility: visible;
+
+}
