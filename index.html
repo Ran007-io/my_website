@@ -7,6 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LR and XWJ</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+    function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min; //不含最大值，含最小值
+    }
+
+    var randomNumber = getRandomInt(0, 10);
+    var count = 0;
+    for (; ;) {
+        count++;
+        var inputNumber = prompt(',请猜0-10之间的一个数：');
+        if (inputNumber > randomNumber) {
+            alert('有点大呀，再来一次吧');
+        } else if (inputNumber < randomNumber) {
+            alert('有点小呀，再来一次吧');
+
+        } else {
+            alert('真不错，猜对啦！你用了' + count + '次');
+            break;
+        }
+    }
+        </script>
 </head>
 
 <body>
